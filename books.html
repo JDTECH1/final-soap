@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+
+        h1 {
+            color: #1d0606;
+            background-color: green;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .books-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book-card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px;
+        }
+        .book-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .book-card button {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .download-all {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Books Page</h1>
+    <button class="download-all" onclick="downloadAllBooks()">Download All Books</button>
+    <button class="download-all"><a href="index.html">HOME</a></button>
+    <div class="books-container">
+        <div class="book-card">
+            <img src="images/zainab 3.jpg" alt="Book 1">
+            <h2>Book 1</h2>
+            <p>Author: John Doe</p>
+            <button onclick="downloadBook('book1.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/zainab image 2.jpg" alt="Book 2">
+            <h2>Book 2</h2>
+            <p>Author: Jane Smith</p>
+            <button onclick="downloadBook('book2.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/nasitta 2.jpg" alt="Book 3">
+            <h2>Book 3</h2>
+            <p>Author: Bob Johnson</p>
+            <button onclick="downloadBook('book3.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/passport 1.jpeg" alt="Book 4">
+            <h2>Book 4</h2>
+            <p>Author: Alice Brown</p>
+            <button onclick="downloadBook('book4.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/OIP (1).jpg" alt="Book 5">
+            <h2>Book 5</h2>
+            <p>Author: Mike Davis</p>
+            <button onclick="downloadBook('book5.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/OIP (2).jpg" alt="Book 6">
+            <h2>Book 6</h2>
+            <p>Author: Emily Chen</p>
+            <button onclick="downloadBook('book6.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/OIP (3).jpg" alt="Book 7">
+            <h2>Book 7</h2>
+            <p>Author: David Lee</p>
+            <button onclick="downloadBook('book7.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/download (1).jpg" alt="Book 8">
+            <h2>Book 8</h2>
+            <p>Author: Sophia Kim</p>
+            <button onclick="downloadBook('book8.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/download.jpg" alt="Book 9">
+            <h2>Book 9</h2>
+            <p>Author: Olivia Martin</p>
+            <button onclick="downloadBook('book9.pdf')">Download</button>
+        </div>
+        <div class="book-card">
+            <img src="images/Library Background.jpeg" alt="Book 10">
+            <h2>Book 10</h2>
+            <p>Author: Ava Patel</p>
+            <button onclick="downloadBook('book9.pdf')">Download</button>
